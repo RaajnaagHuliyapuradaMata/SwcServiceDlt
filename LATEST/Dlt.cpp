@@ -43,7 +43,7 @@ class module_Dlt:
 /******************************************************************************/
             Std_TypeReturn          IsInitDone{E_NOT_OK};
       const CfgModule_TypeAbstract* lptrCfg{(CfgModule_TypeAbstract*)NULL_PTR};
-            infPduRClient_Lo        infPduRClient_Dlt;
+            infPduRClient_Up        infPduRClient_Dlt;
 
    public:
       module_Dlt(Std_TypeVersionInfo lVersionInfo) : abstract_module(lVersionInfo){
