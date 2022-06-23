@@ -131,7 +131,9 @@ FUNC(void, DLT_CODE) module_Dlt::InitFunction(
 #endif
 }
 
-FUNC(void, DLT_CODE) module_Dlt::DeInitFunction(void){
+FUNC(void, DLT_CODE) module_Dlt::DeInitFunction(
+   void
+){
 #if(STD_ON == Dlt_InitCheck)
    if(
          E_OK
@@ -154,7 +156,9 @@ FUNC(void, DLT_CODE) module_Dlt::DeInitFunction(void){
 #endif
 }
 
-FUNC(void, DLT_CODE) module_Dlt::MainFunction(void){
+FUNC(void, DLT_CODE) module_Dlt::MainFunction(
+   void
+){
 #if(STD_ON == Dlt_InitCheck)
    if(
          E_OK
@@ -176,7 +180,9 @@ FUNC(void, DLT_CODE) module_Dlt::MainFunction(void){
 #endif
 }
 
-FUNC(void, DLT_CODE) module_Dlt::dummy(void){
+FUNC(void, DLT_CODE) module_Dlt::dummy(
+   void
+){
 }
 
 /******************************************************************************/
