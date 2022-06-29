@@ -41,13 +41,9 @@ class module_Dlt:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-            Std_TypeReturn          IsInitDone{E_NOT_OK};
-      const CfgModule_TypeAbstract* lptrCfg{(CfgModule_TypeAbstract*)NULL_PTR};
             infPduRClient_Up        infPduRClient_Dlt;
 
    public:
-      module_Dlt(Std_TypeVersionInfo lVersionInfo) : abstract_module(lVersionInfo){
-      }
       FUNC(void, DLT_CODE) InitFunction(
          CONSTP2CONST(CfgModule_TypeAbstract, DLT_CONFIG_DATA, DLT_APPL_CONST) lptrCfgModule
       );
@@ -72,18 +68,7 @@ CONSTP2VAR(infSchMClient, DLT_VAR, DLT_CONST) gptrinfSchMClient_Dlt = &Dlt;
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_Dlt, DLT_VAR) Dlt(
-   {
-         DLT_AR_RELEASE_VERSION_MAJOR
-      ,  DLT_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
-);
+VAR(module_Dlt, DLT_VAR) Dlt;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
