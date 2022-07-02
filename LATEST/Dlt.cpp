@@ -83,12 +83,7 @@ FUNC(void, DLT_CODE) module_Dlt::InitFunction(
    ){
 #endif
       if(NULL_PTR != lptrCfgModule){
-         if(STD_HIGH){
-            lptrCfg = lptrCfgModule;
-         }
-         else{
-            lptrCfg = &PBcfgDlt;
-         }
+         lptrCfg = lptrCfgModule;
       }
       else{
 #if(STD_ON == Dlt_DevErrorDetect)
