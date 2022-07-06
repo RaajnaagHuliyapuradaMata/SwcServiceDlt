@@ -7,9 +7,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Module.hpp"
-#include "CfgDlt.hpp"
-#include "Dlt_core.hpp"
-#include "infDlt_Exp.hpp"
+#include "Dlt.hpp"
 #include "infDlt_Imp.hpp"
 
 /******************************************************************************/
@@ -32,27 +30,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class module_Dlt:
-      INTERFACES_EXPORTED_DLT
-      public abstract_module
-   ,  public class_Dlt_Functionality
-{
-   private:
-/******************************************************************************/
-/* OBJECTS                                                                    */
-/******************************************************************************/
-            infPduRClient_Up        infPduRClient_Dlt;
-
-   public:
-      FUNC(void, DLT_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, DLT_CONFIG_DATA, DLT_APPL_CONST) lptrCfgModule
-      );
-      FUNC(void, DLT_CODE) DeInitFunction (void);
-      FUNC(void, DLT_CODE) MainFunction   (void);
-      DLT_CORE_FUNCTIONALITIES
-};
-
-extern VAR(module_Dlt, DLT_VAR) Dlt;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
