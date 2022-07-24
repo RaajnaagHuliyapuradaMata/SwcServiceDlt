@@ -48,7 +48,8 @@ VAR(module_Dlt, DLT_VAR) Dlt;
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
 FUNC(void, DLT_CODE) module_Dlt::InitFunction(
-   CONSTP2CONST(CfgModule_TypeAbstract, DLT_CONFIG_DATA, DLT_APPL_CONST) lptrCfgModule
+      CONSTP2CONST(ConstModule_TypeAbstract, DLT_CONST,       DLT_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   DLT_CONFIG_DATA, DLT_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == Dlt_InitCheck)
    if(
@@ -56,8 +57,12 @@ FUNC(void, DLT_CODE) module_Dlt::InitFunction(
       != IsInitDone
    ){
 #endif
-      if(NULL_PTR != lptrCfgModule){
-         lptrCfg = lptrCfgModule;
+      if(
+            (NULL_PTR != lptrConstModule)
+         && (NULL_PTR != lptrCfgModule)
+      ){
+         lptrConst = lptrConstModule;
+         lptrCfg   = lptrCfgModule;
       }
       else{
 #if(STD_ON == Dlt_DevErrorDetect)

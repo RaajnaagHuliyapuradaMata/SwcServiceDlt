@@ -7,6 +7,7 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "ConstDlt.hpp"
 #include "CfgDlt.hpp"
 #include "Dlt_core.hpp"
 #include "infDlt_Exp.hpp"
@@ -31,6 +32,7 @@ class module_Dlt:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
+      const ConstDlt_Type* lptrConst = (ConstDlt_Type*)NULL_PTR;
       infPduRClient_Up infPduRClient_Dlt;
 
    public:
@@ -38,7 +40,8 @@ class module_Dlt:
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
       FUNC(void, DLT_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, DLT_CONFIG_DATA, DLT_APPL_CONST) lptrCfgModule
+            CONSTP2CONST(ConstModule_TypeAbstract, DLT_CONST,       DLT_APPL_CONST) lptrConstModule
+         ,  CONSTP2CONST(CfgModule_TypeAbstract,   DLT_CONFIG_DATA, DLT_APPL_CONST) lptrCfgModule
       );
       FUNC(void, DLT_CODE) DeInitFunction (void);
       FUNC(void, DLT_CODE) MainFunction   (void);
