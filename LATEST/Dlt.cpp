@@ -61,7 +61,7 @@ FUNC(void, DLT_CODE) module_Dlt::InitFunction(
             (NULL_PTR != lptrConstModule)
          && (NULL_PTR != lptrCfgModule)
       ){
-         lptrConst = lptrConstModule;
+         lptrConst = (const ConstDlt_Type*)lptrConstModule;
          lptrCfg   = lptrCfgModule;
       }
       else{
