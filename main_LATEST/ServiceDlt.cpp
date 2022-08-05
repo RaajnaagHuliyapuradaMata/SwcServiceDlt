@@ -13,18 +13,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define DLT_AR_RELEASE_VERSION_MAJOR                                           4
-#define DLT_AR_RELEASE_VERSION_MINOR                                           3
+#define SERVICEDLT_AR_RELEASE_VERSION_MAJOR                                           4
+#define SERVICEDLT_AR_RELEASE_VERSION_MINOR                                           3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(DLT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible DLT_AR_RELEASE_VERSION_MAJOR!"
+#if(SERVICEDLT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible SERVICEDLT_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(DLT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible DLT_AR_RELEASE_VERSION_MINOR!"
+#if(SERVICEDLT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible SERVICEDLT_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -42,14 +42,14 @@
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_ServiceDlt, DLT_VAR) ServiceDlt;
+VAR(module_ServiceDlt, SERVICEDLT_VAR) ServiceDlt;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-FUNC(void, DLT_CODE) module_ServiceDlt::InitFunction(
-      CONSTP2CONST(ConstModule_TypeAbstract, DLT_CONST,       DLT_APPL_CONST) lptrConstModule
-   ,  CONSTP2CONST(CfgModule_TypeAbstract,   DLT_CONFIG_DATA, DLT_APPL_CONST) lptrCfgModule
+FUNC(void, SERVICEDLT_CODE) module_ServiceDlt::InitFunction(
+      CONSTP2CONST(ConstModule_TypeAbstract, SERVICEDLT_CONST,       SERVICEDLT_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   SERVICEDLT_CONFIG_DATA, SERVICEDLT_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == ServiceDlt_InitCheck)
    if(
@@ -83,14 +83,14 @@ FUNC(void, DLT_CODE) module_ServiceDlt::InitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  DLT_E_UNINIT
+         ,  SERVICEDLT_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, DLT_CODE) module_ServiceDlt::DeInitFunction(
+FUNC(void, SERVICEDLT_CODE) module_ServiceDlt::DeInitFunction(
    void
 ){
 #if(STD_ON == ServiceDlt_InitCheck)
@@ -108,14 +108,14 @@ FUNC(void, DLT_CODE) module_ServiceDlt::DeInitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  DLT_E_UNINIT
+         ,  SERVICEDLT_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, DLT_CODE) module_ServiceDlt::MainFunction(
+FUNC(void, SERVICEDLT_CODE) module_ServiceDlt::MainFunction(
    void
 ){
 #if(STD_ON == ServiceDlt_InitCheck)
@@ -132,14 +132,14 @@ FUNC(void, DLT_CODE) module_ServiceDlt::MainFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  DLT_E_UNINIT
+         ,  SERVICEDLT_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, DLT_CODE) module_ServiceDlt::dummy(
+FUNC(void, SERVICEDLT_CODE) module_ServiceDlt::dummy(
    void
 ){
 }

@@ -12,11 +12,11 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define DLT_CORE_FUNCTIONALITIES                                               \
-              FUNC(void, DLT_CODE) dummy                           (void);     \
+#define SERVICEDLT_CORE_FUNCTIONALITIES                                               \
+              FUNC(void, SERVICEDLT_CODE) dummy                           (void);     \
 
-#define DLT_CORE_FUNCTIONALITIES_VIRTUAL                                       \
-      virtual FUNC(void, DLT_CODE) dummy                           (void) = 0; \
+#define SERVICEDLT_CORE_FUNCTIONALITIES_VIRTUAL                                       \
+      virtual FUNC(void, SERVICEDLT_CODE) dummy                           (void) = 0; \
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -27,7 +27,7 @@
 /******************************************************************************/
 class class_ServiceDlt_Functionality{
    public:
-      DLT_CORE_FUNCTIONALITIES_VIRTUAL
+      SERVICEDLT_CORE_FUNCTIONALITIES_VIRTUAL
 };
 
 /******************************************************************************/
