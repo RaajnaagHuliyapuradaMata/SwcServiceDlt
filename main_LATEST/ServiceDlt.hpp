@@ -24,7 +24,7 @@
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
 class module_ServiceDlt:
-      INTERFACES_EXMCALPORTED_SERVICEDLT
+      INTERFACES_EXPORTED_SERVICEDLT
       public abstract_module
    ,  public class_ServiceDlt_Functionality
 {
