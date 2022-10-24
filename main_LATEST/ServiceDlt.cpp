@@ -1,5 +1,5 @@
 /******************************************************************************/
-/* File   : ServiceDlt.cpp                                                           */
+/* File   : ServiceDlt.cpp                                                    */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
@@ -13,8 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define SERVICEDLT_AR_RELEASE_VERSION_MAJOR                                           4
-#define SERVICEDLT_AR_RELEASE_VERSION_MINOR                                           3
+#define SERVICEDLT_AR_RELEASE_VERSION_MAJOR                                    4
+#define SERVICEDLT_AR_RELEASE_VERSION_MINOR                                    3
 
 /******************************************************************************/
 /* MACROS                                                                     */
