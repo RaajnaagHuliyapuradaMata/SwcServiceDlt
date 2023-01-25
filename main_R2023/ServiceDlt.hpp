@@ -1,13 +1,13 @@
 #pragma once
 /******************************************************************************/
-/* File   : ServiceDlt.hpp                                                           */
+/* File   : ServiceDlt.hpp                                                    */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "ConstServiceDlt.hpp"
+#include "infServiceDlt_ServiceNvM_Types.hpp"
 #include "CfgServiceDlt.hpp"
 #include "ServiceDlt_core.hpp"
 #include "infServiceDlt_Exp.hpp"
